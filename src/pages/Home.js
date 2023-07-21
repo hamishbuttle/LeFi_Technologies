@@ -11,7 +11,10 @@ const Home = () => {
       <Navbar />
       <Header>
         <Wrapper>
-          <CTA>
+          <CTA             
+            initial={{ opacity: 0, scale: 1 }}
+            animate={{ opacity: 1, scale: 1, y: -16 }}
+            transition={{ duration: 0.8, delay: 0.6 }}>
             <small>Financial Tech For Property Managers</small>
             <h1>Upgrade your P.M Agency</h1>
             <p>
@@ -48,7 +51,9 @@ const Home = () => {
           </CTA>
           <SquareGrid>
             <Square>
-              <img src={leficard} alt="lefi card" />
+              <img   
+              src={leficard} 
+              alt="lefi card" />
             </Square>
             <Square>
               <img src={leficard} alt="lefi card" />

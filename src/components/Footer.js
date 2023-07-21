@@ -26,6 +26,8 @@ const Copyright = styled.p`
 const FooterLinks = styled.div`
   display: flex;
   gap: 1rem;
+  font-size: 14px;
+  opacity: .8;
 `;
 
 const FooterLink = styled.a`
@@ -41,9 +43,9 @@ const Footer = () => {
         <Copyright>©LeFi Technologies Pty Ltd</Copyright>
       </div>
       <FooterLinks>
-        <FooterLink href="#">Link 1</FooterLink>
-        <FooterLink href="#">Link 2</FooterLink>
-        <FooterLink href="#">Link 3</FooterLink>
+        <FooterLink href="#">Dashboard</FooterLink>
+        <FooterLink href="#">Opportunity Fund</FooterLink>
+        <FooterLink href="#">Terms</FooterLink>
       </FooterLinks>
     </FooterContainer>
   );

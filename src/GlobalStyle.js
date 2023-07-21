@@ -1,5 +1,6 @@
 import { createGlobalStyle, styled } from "styled-components";
 import normalize from "normalize.css";
+import {motion} from "framer-motion";
 
 export const designTokens = {
   color: {
@@ -78,6 +79,9 @@ const GlobalStyle = createGlobalStyle`
     color: ${designTokens.color.textSecondary};
     font-weight: ${designTokens.font.weight.light};
     line-height: 1.6;
+    strong {
+      color: white;
+    }
   }
 
   a {
@@ -111,7 +115,7 @@ export const Wrapper = styled.div`
   margin: 0 auto;
 `;
 
-export const CTA = styled.div`
+export const CTA = styled(motion.div)`
   text-align: center;
   padding: 1.6em;
   margin: auto;
