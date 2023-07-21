@@ -28,7 +28,7 @@ const Navbar = () => {
     <NavbarOuterContainer>
       <NavbarInnerContainer>
         <img src={logo} alt="logo" />
-        <NavLink href="#">Member Dashboard</NavLink>
+        <NavLink href="#">Landlord Dashboard</NavLink>
       </NavbarInnerContainer>
     </NavbarOuterContainer>
   );

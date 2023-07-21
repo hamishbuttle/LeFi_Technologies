@@ -15,11 +15,10 @@ const Home = () => {
             initial={{ opacity: 0, scale: 1 }}
             animate={{ opacity: 1, scale: 1, y: -16 }}
             transition={{ duration: 0.8, delay: 0.6 }}>
-            <small>Financial Tech For Property Managers</small>
-            <h1>Upgrade your P.M Agency</h1>
+            <small>Financial Technology For Property Managers</small>
+            <h1>Upgrade your PM Agency</h1>
             <p>
-              Cash advances for managed investment properties so you can scale
-              your portfolio like a pro.
+              Unlock cash advances for your clients so they can manage and grow their portfolio with ease.
             </p>
             <Button>Contact Us</Button>
           </CTA>
@@ -45,8 +44,8 @@ const Home = () => {
           <CTA>
             <h2>Instantly Available Advances</h2>
             <p>
-              Enable your clients to have financial flexibility with their
-              rental income.
+              Enable your clients to have instant financial flexibility with their
+              rental income as soon as they're onboard.
             </p>
           </CTA>
           <SquareGrid>
@@ -86,9 +85,7 @@ const Home = () => {
                 <strong>Recapitalise</strong>
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                non dui a velit fermentum tincidunt in non lacus. Mauris
-                accumsan aliquet felis.
+                If you are under mortgage stress don't worry, you can bring forward your future rental income to cover your cashflow requirments.
               </p>
             </TextBox>
             <TextBox>
@@ -97,9 +94,7 @@ const Home = () => {
                 <strong>Finance A deposit</strong>
               </p>
               <p>
-                Proin non orci faucibus, feugiat risus ut, pulvinar nunc.
-                Maecenas nec augue nec urna vulputate condimentum ac ac lacus.
-                Proin accumsan lectus at mauris.
+                If you havn't built up home equity or have enough cash to take advantage of an opportnuity, our experts can help you finance a deposit through cash advance.
               </p>
             </TextBox>
           </FlexContainer>
