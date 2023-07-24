@@ -6,7 +6,7 @@ export const designTokens = {
   color: {
     accent: "linear-gradient(180deg, #FFC701 0%, #FFA901 100%)",
     bodyBackground:
-      "var(--bg, linear-gradient(180deg, #171616 0%, #272526 58.33%, #1A1718 100%));",
+      "var(--bg, linear-gradient(180deg, #171616 0%, #272526 58.33%, #1A1718 100%)) no-repeat;",
     textPrimary: "#FFFFFF",
     textSecondary: "#A9A9A9",
     textLink: "#FFC701",
@@ -41,12 +41,16 @@ export const designTokens = {
 const GlobalStyle = createGlobalStyle`
     @import url(${normalize});
 
+    * {
+      box-sizing: border-box;
+    }
+
   body {
     background: ${designTokens.color.bodyBackground};
     font-family: ${designTokens.font.family};
     color: ${designTokens.color.textPrimary};
     font-size: ${designTokens.font.size.base};
-    height: 100vh;
+    min-height: 100vh;
   }
 
   section {
@@ -72,6 +76,10 @@ const GlobalStyle = createGlobalStyle`
   h3 {
     font-size: ${designTokens.font.size.h3};
     font-weight: ${designTokens.font.weight.regular};
+  }
+
+  li {
+    list-style: none;
   }
 
   p {
@@ -109,7 +117,15 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-// Wrapper component
+export const SplashPage = styled.div`
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+`;
+
+
 export const Wrapper = styled.div`
   max-width: ${designTokens.responsive.desktop};
   margin: 0 auto;

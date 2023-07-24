@@ -43,7 +43,7 @@ const Footer = () => {
         <Copyright>©LeFi Technologies Pty Ltd</Copyright>
       </div>
       <FooterLinks>
-        <FooterLink href="#">Dashboard</FooterLink>
+        <FooterLink href="#">Control Centre</FooterLink>
         <FooterLink href="#">Opportunity Fund</FooterLink>
         <FooterLink href="#">Terms</FooterLink>
       </FooterLinks>

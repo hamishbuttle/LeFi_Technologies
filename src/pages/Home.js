@@ -2,8 +2,8 @@ import { Wrapper, Header, CTA, Points, Button } from "../GlobalStyle";
 import { FaCheck } from "react-icons/fa"; // Import FontAwesome check icon
 import { Square, SquareGrid, FlexContainer, TextBox } from "../GlobalStyle";
 import leficard from "../images/LeFiCard.svg";
-import Navbar from "../components/Navbar.js";
-import Footer from "../components/Footer.js";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
@@ -20,7 +20,7 @@ const Home = () => {
             <p>
               Unlock cash advances for your clients so they can manage and grow their portfolio with ease.
             </p>
-            <Button>Contact Us</Button>
+            <Button onClick={() => window.location = 'mailto:hamish@lefi.com.au'}>Contact Us</Button>
           </CTA>
           <Points>
             <div>
@@ -109,7 +109,7 @@ const Home = () => {
               Stand out from the crowd and provide all the financial flexibility
               that other Agencies can’t.
             </p>
-            <Button>Contact Us</Button>
+            <Button onClick={() => window.location = 'mailto:hamish@lefi.com.au'}>Contact Us</Button>
           </CTA>
         </Wrapper>
       </section>
